@@ -1,20 +1,10 @@
-(Certifique-se que a primeira pasta do terminal seja "Testes" (A pasta que envolve todos os projetos) antes de seguir os passos, para não haver conflitos com os outros projetos.
-Por exemplo: "C:\Users\someone\OneDrive\Desktop\Testes>")
+-Baixar máquina virtual: "python -m venv venv"
 
+-Abrir o terminal "Git Bash" ou "Git" e escrever ". venv/Scripts/activate" no terminal para ativá-la.
 
+-"pip install django" e "pip install djangorestframework" para baixar o Django e o Django Rest Framework. 
 
-Caso seja necessário ativar a máquina virtual para rodar, basta abrir o terminal "Git Bash" ou "Git" e escrever ". venv/Scripts/activate" no terminal.
-
-
-"pip install django" e "pip install djangorestframework" para baixar o Django e o Django Rest Framework. 
-
-
-Passos para rodar o projeto em Django abaixo:
-
-
-Passo 1: Acessar pasta do projeto com "cd Back-End-opção-2/projeto" pelo terminal.
-
-Passo 2: Escrever no terminal "python manage.py runserver" para rodar o projeto.
+-Para rodar o projeto em Django, basta escrever no terminal "python manage.py runserver".
 
 
 
@@ -23,6 +13,7 @@ Explicando funcionalidades:
 
 
 -------PROFISSIONAIS-------
+
 
 -Logo ao rodar o servidor, você será redirecionado para a interface própria do Django Rest Framework.
 
@@ -82,10 +73,10 @@ inserir o ID correspondente da consulta logo após "Consultas/" (Por exemplo, mi
 
 -O teste unitário foi feito testando o arquivo python "models.py".
 
--Para conferir o arquivo de teste, abra a pasta chamada "tests", dentro dela terá o arquivo python "test_models.py".
+-Para conferir o arquivo de teste, abra a pasta "api" e logo após ela, a pasta "tests". Dentro dela terá o arquivo python "test_models.py".
 
 -O teste irá criar um profissional e uma consulta no método "setUp()" antes de realizar algum teste.
 
--Após isso, nos métodos "test_profissional_creation" e "test_consulta_creation" irá acontecer a verificação se os objetos foram criados corretamentee se os campos estão preenchidos conforme o esperado.
+-Após isso, nos métodos "test_profissional_creation" e "test_consulta_creation" irá acontecer a verificação se os objetos foram criados corretamente e se os campos estão preenchidos conforme o esperado.
 
--Para rodar o teste, escreva "python manage.py test".
+-Para rodar o teste, escreva "python manage.py test" no terminal.
